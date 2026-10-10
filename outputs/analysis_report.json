@@ -1,0 +1,52 @@
+{
+  "ground_sample_distance_m": 10.0,
+  "estimated_shift_px": [
+    3.92,
+    -3.04
+  ],
+  "area_ha_date1": {
+    "Bare soil": 1594.6,
+    "Vegetation": 774.35,
+    "Water": 155.03,
+    "Built-up": 97.46
+  },
+  "area_ha_date2": {
+    "Bare soil": 1701.32,
+    "Vegetation": 680.86,
+    "Water": 111.17,
+    "Built-up": 128.09
+  },
+  "changed_area_ha": 249.13,
+  "class_transitions_ha": {
+    "Vegetation -> Bare soil": 118.67,
+    "Bare soil -> Vegetation": 55.88,
+    "Water -> Bare soil": 43.88,
+    "Vegetation -> Built-up": 30.7,
+    "Built-up -> Bare soil": 0.08,
+    "Bare soil -> Built-up": 0.01
+  },
+  "buildings": {
+    "date1": 11,
+    "date2": 23
+  },
+  "road_area_ha": {
+    "date1": 69.28,
+    "date2": 69.28
+  },
+  "hough_road_lines_raw": {
+    "date1": 23,
+    "date2": 23,
+    "note": "overlapping Hough detections of the same road; not a road count"
+  },
+  "techniques": [
+    "Bilateral filtering",
+    "ECC image registration (translation)",
+    "Radiometric normalisation (robust mean/std)",
+    "K-Means clustering in CIELAB",
+    "Colour-rule cluster naming",
+    "Majority (mode) filtering",
+    "Morphological opening + connected components",
+    "Probabilistic Hough transform",
+    "Lab colour-difference (Delta-E) + Otsu thresholding"
+  ]
+}
