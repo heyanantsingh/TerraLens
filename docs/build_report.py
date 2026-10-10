@@ -158,7 +158,7 @@ S += [Paragraph("14. User Interaction", H1), para("Command-line only: --demo, --
 pb = B["bld_rows"]
 S += [Paragraph("16. Results and Observations", H1),
  para("<b>Protocol.</b> Rules and parameters were developed on seeds 1-3. The numbers below are for seeds 11-15, which were not used during development. "
-      "Every scene has 512x512 pixels, sensor noise (sigma 15 grey levels), a 4x-3 pixel mis-registration, and a gain/bias illumination change on date 2. "
+      "Every scene has 512x512 pixels, sensor noise (sigma 15 grey levels), a (4, -3) pixel mis-registration, and a gain/bias illumination change on date 2. "
       "<b>The scene layout and the four change events are the same for every seed</b>; seeds change texture, noise and building placement. "
       "The benchmark therefore measures robustness to noise and placement, not generalisation to arbitrary geometry."),
  Paragraph("Table 1. Land-cover classification (mean +/- std over 5 held-out seeds)", CAP),
